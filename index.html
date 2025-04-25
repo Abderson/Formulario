@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="style.css">     
+  <title>Curso HTML</title>
+</head>
+
+<body>
+
+  <h1>Formulario do Programador</h1>
+  <form>
+    <label for="pnome">Primeiro Nome</label>
+    <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome" required> <br><br>
+
+    <label for="unome">Ultimo nome</label>
+    <input type="text" id="unome" name="unome" placeholder="Ultimo nome" required> <br><br>
+
+    <label> Qual é a sua linguagem favorita?</label><br>
+
+    <label>
+      <input type="radio" name="linguagem" value="javascript" id="javascript"> JavaScript
+    </label>
+
+    <label>
+      <input type="radio" name="linguagem" value="python" id="python"> Python
+    </label>
+
+    <label>
+      <input type="radio" name="linguagem" value="php" id="php"> PHP
+    </label>
+
+    <label>
+      <input type="radio" name="linguagem" value="java" id="java"> Java
+    </label><br><br>
+
+    <label for="experiencia">Tempo de experiência (anos):</label>
+    <input type="number" id="experiencia" name="experiencia" min="0" max="50" required><br><br>
+
+    <label>Tecnologias que conhece:</label><br><br>
+    <label><input type="checkbox" name="tecnologias" value="HTML"> HTML</label>
+    <label><input type="checkbox" name="tecnologias" value="CSS"> CSS</label>
+    <label><input type="checkbox" name="tecnologias" value="React"> React</label>
+    <label><input type="checkbox" name="tecnologias" value="Node.js"> Node.js</label>
+    <br><br>
+
+    <label for="projeto">Descreva um projeto que já fez:</label><br>
+    <textarea id="projeto" name="projeto" rows="3" cols="40" required></textarea>
+    <br><br>
+
+    <div id="resumo"></div>
+
+    <button type="submit"  id="enviar">Enviar</button>
+  </form>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

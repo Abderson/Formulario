@@ -7,6 +7,7 @@ const botao = document.getElementById("enviar");
 const experiencia = document.getElementById("experiencia");
 const projeto = document.getElementById("projeto");
 const resumo = document.getElementById("resumo");
+const data = document.getElementById("data");
 
 botao.addEventListener("click", function (event) {
     event.preventDefault();
@@ -25,6 +26,7 @@ botao.addEventListener("click", function (event) {
 
     const nomeCompleto = `${nome.value} ${sobrenome.value}`;
     const linguagemEscolhida = linguagemSelecionada.value;
+    const dataPreenchida = data.value;
 
     resumo.innerHTML = `
         <h3>Resumo:</h3>
@@ -33,8 +35,10 @@ botao.addEventListener("click", function (event) {
         <p><strong>Tempo de experiência:</strong> ${experiencia.value} anos</p>
         <p><strong>Tecnologias:</strong> ${tecnologiasSelecionadas.join(", ") || "Nenhuma selecionada"}</p>
         <p><strong>Projeto:</strong> ${projeto.value}</p>
+        <p><strong>Data:</strong> ${dataPreenchida}</p>
     `;
 
-    document.querySelector("formulario").reset();
-   
+    document.querySelector("form").reset();
+
+    
 });
